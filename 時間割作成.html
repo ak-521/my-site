@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>時間割自動生成アプリ</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  .back-button {
+      display: inline-block;
+      margin: 0 auto;
+      padding: 10px 20px;
+      font-size: 20px;
+      margin-left: 300px;
+      margin-bottom: 30px;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      background-color: #007bff;
+      border-radius: 10px;
+    }
+    @media (max-width: 600px) {
+    .back-button {
+        font-size: 16px;
+        padding: 8px 10px;
+        margin-left: 10px;
+      }
+    }
+</style>
+<body>
+  <main>
+    <h1>時間割自動生成アプリ</h1>
+    <section class="unit-settings">
+      <h2>単位設定</h2>
+      <div id="unit-list"></div>
+      <button id="add-unit-btn" type="button">単位を追加</button>
+      <div id="unit-counts" style="margin-top:1em;color:#1769aa;font-weight:bold;"></div>
+    </section>
+    <section>
+      <button id="generate-btn">時間割を生成</button>
+      <button id="random-btn" type="button" style="background:#43a047;margin-left:1em;">ランダム配置</button>
+    </section>
+    <section id="timetable-section" style="display:none;">
+      <h2>時間割表</h2>
+      <div id="timetable-container"></div>
+      <button id="save-btn">画像保存</button>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+  <a href="大学生のスケジュール管理.html" class="back-button">← 大学生のスケジュール管理ページに戻る</a>
+</body>
+</html>

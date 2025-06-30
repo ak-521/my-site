@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>目次ページ</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background-image: url('nyugaku_2.jpg'); /* 画像ファイル名を適宜変更 */
+      background-size: cover;                  /* 画像を画面いっぱいに拡大・縮小 */
+      background-position: center;             /* 画像の中央を表示 */
+      background-repeat: no-repeat;            /* 画像の繰り返しを防ぐ */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      font-size: 50px;
+      margin-bottom: 50px;
+      color: #ffffff;
+      background-color: rgba(134, 134, 134, 0.3);
+      padding: 5px;
+      border-radius: 5px;
+      margin-top: 60px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav li {
+      margin: 20px 0;
+    }
+    nav a {
+      font-size: 50px;
+      color: #ffffff;
+      text-decoration: underline;
+      background-color: rgba(95, 94, 94, 0.3);
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    /* QRコードの調整 */
+    .qr-code {
+      width: 400px;
+      height: auto;
+      margin-top: 100px;
+      background: rgba(255,255,255,0.5);
+      border-radius: 12px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>大学生活のあれこれ 目次</h1>
+  <nav>
+    <ul>
+      <li><a href="大学生のスケジュール管理.html">1. 大学生のスケジュール管理</a></li>
+      <li><a href="単位の取り方.html">2. 単位の取り方</a></li>
+      <li><a href="日本大学生産工学部のイベント.html">3. 日本大学生産工学部のイベント</a></li>
+      <li><a href="理科探求部.html">4. 理科探求部</a></li>
+      <li><a href="大学1年生やるべきこと.html">5. 大学1年生　やるべきこと</a></li>
+    </ul>
+  </nav>
+  <img src="QR_723365.png" alt="このサイトのQRコード" class="qr-code">
+</body>
+</html>

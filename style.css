@@ -1,0 +1,144 @@
+body, h1, h2, p, input, button, select, label {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", "Meiryo", sans-serif;
+  background: #f5f8fa;
+  color: #222;
+  min-height: 100vh;
+}
+main {
+  max-width: 700px;
+  margin: 2em auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px #0001;
+  padding: 2em 1em;
+}
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 1.2em;
+  text-align: center;
+}
+.unit-settings {
+  margin-bottom: 1.5em;
+}
+.unit-row {
+  margin-bottom: 1em;
+}
+.unit-card {
+  background: #f4f9ff;
+  border: 1.5px solid #b5d5f7;
+  border-radius: 8px;
+  padding: 1em 0.8em 0.8em 0.8em;
+  box-shadow: 0 2px 6px #0001;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2em;
+  align-items: flex-end;
+  position: relative;
+}
+.unit-label {
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+  margin-right: 0.5em;
+  font-size: 0.98em;
+  font-weight: 500;
+  color: #1769aa;
+  margin-bottom: 0.5em;
+}
+.unit-block {
+  margin-bottom: 0.7em;
+  background: #f8fbff;
+  border-radius: 6px;
+  padding: 0.5em 0.8em;
+  border: 1px solid #e0e8f0;
+  min-width: 130px;
+}
+.block-title {
+  font-weight: bold;
+  color: #2196f3;
+  margin-bottom: 0.25em;
+  font-size: 0.99em;
+}
+.checkbox-inline {
+  margin-right: 0.8em;
+  font-weight: 400;
+  font-size: 0.96em;
+}
+.periods-checkbox, .days-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.unit-card .remove-btn {
+  margin-left: auto;
+  background: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.3em 1em;
+  font-size: 1em;
+  cursor: pointer;
+}
+button {
+  font-size: 1em;
+  background: #2196f3;
+  color: white;
+  border: none;
+  padding: 0.6em 2em;
+  border-radius: 4px;
+  margin-top: 0.5em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button#random-btn {
+  background: #43a047;
+}
+button#random-btn:hover, button#random-btn:focus {
+  background: #388e3c;
+}
+button:hover, button:focus {
+  background: #1769aa;
+}
+#timetable-section {
+  margin-top: 2em;
+  text-align: center;
+}
+#timetable-container {
+  overflow-x: auto;
+  margin: 1em 0;
+  display: inline-block;
+}
+.timetable-table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 500px;
+}
+.timetable-table th, .timetable-table td {
+  border: 1px solid #bbb;
+  padding: 0.32em 0.7em;
+  text-align: center;
+  background: #fafdff;
+  font-size: 0.98em;
+}
+.timetable-table th {
+  background: #e3f2fd;
+}
+@media (max-width: 900px) {
+  main {
+    max-width: 98vw;
+    padding: 1em 0.1em;
+  }
+  .unit-card {
+    flex-direction: column;
+    gap: 0.6em;
+    padding: 0.7em 0.3em 0.5em 0.3em;
+  }
+  .unit-label {
+    min-width: 80px;
+    font-size: 0.95em;
+  }
+}
