@@ -77,18 +77,25 @@
       margin: 30px auto; 
       width: 90%;  
     }
-    .back-button {
-      display: inline-block;
-      margin: 0 auto;
-      margin-top: 30px;
-      padding: 10px 20px;
-      font-size: 20px;
-      text-align: center;
-      text-decoration: none;
-      color: white;
-      background-color: #007bff;
-      border-radius: 10px;
+    .links-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 16px; /* デモ用：ページ下部にしたい場合 */
     }
+    .link-left, .link-right {
+      font-size: 20px;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: white;
+    }
+    .link-left {
+      background-color: #28a745;
+    }
+    .link-right {
+      background-color: #007bff;
+    }
+
     /* スマホ用レイアウト調整 */
     @media (max-width: 600px) {
       nav {
@@ -122,9 +129,9 @@
         max-width: 100%;
         height: auto;
       }
-      .back-button {
-        font-size: 16px;
-        padding: 8px 10px;
+      .links-row {
+        flex-direction: column;
+        gap: 8px;
       }
       .button{
         font-size: 16px;
@@ -176,7 +183,9 @@
   <p>・大学の制度の理解力を深めよう！</p>
   <p>　→何が必要なのかを見極められる。</p>
 </section>
-
-  <a href="index.html" class="back-button">← 目次ページに戻る</a>
+<div class="links-row">
+  <a href="index.html" class="link-left">← 目次ページに戻る</a>
+  <a href="日本大学生産工学部のイベント.html" class="link-right">日本大学生産工学部のイベントページに進む→</a>
+</div>
 </body>
 </html>
