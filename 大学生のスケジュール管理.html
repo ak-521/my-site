@@ -78,18 +78,34 @@
       margin: 30px auto; 
       width: 90%;  
     }
-    .back-button {
-      display: inline-block;
-      margin: 0 auto;
-      margin-top: 30px;
-      padding: 10px 20px;
-      font-size: 20px;
-      text-align: center;
-      text-decoration: none;
-      color: white;
-      background-color: #007bff;
-      border-radius: 10px;
+    .links-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 16px; /* デモ用：ページ下部にしたい場合 */
     }
+    .link-left, .link-right {
+      font-size: 20px;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: white;
+    }
+    .link-left {
+      background-color: #28a745;
+    }
+    .link-right {
+      background-color: #007bff;
+    }
+    .button{
+      font-size: 20px;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 10px;
+      color: rgb(0, 0, 0);
+      background-color: rgb(255, 247, 0);
+
+    }
+
     /* スマホ用レイアウト調整 */
     @media (max-width: 600px) {
       nav {
@@ -123,9 +139,9 @@
         max-width: 100%;
         height: auto;
       }
-      .back-button {
-        font-size: 16px;
-        padding: 8px 10px;
+      .links-row {
+        flex-direction: column;
+        gap: 8px;
       }
       .button{
         font-size: 16px;
@@ -207,6 +223,9 @@
   <section>
   <p>時間割表を作ってみたい方はこちらから→<a href="時間割作成.html" class="button">時間割作成</a></p>
   </section>
-  <a href="index.html" class="back-button">← 目次ページに戻る</a>
+  <div class="links-row">
+  <a href="index.html" class="link-left">← 目次ページに戻る</a>
+  <a href="単位の取り方.html" class="link-right">単位の取り方ページに進む→</a>
+  </div>
 </body>
 </html>
